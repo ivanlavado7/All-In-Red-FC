@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultados</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="img/escudo.png" class="escudo">
+  <h1>Resultados</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="jugadores.html">Jugadores</a>
+  <a href="estadisticas.html">Estadísticas</a>
+  <a href="resultados.html">Resultados</a>
+  <a href="clasificacion.html">Clasificación</a>
+</nav>
+
+<div id="resultados" class="resultados-container"></div>
+
+<script src="js/datos.js"></script>
+
+<script>
+  const MI_EQUIPO = "ALL IN RED FC";
+const contenedor = document.getElementById("resultados");
+
+// Agrupar partidos por jornada
+const jornadasMap = new Map();
+
+partidos.forEach(p => {
+  if (!jornadasMap.has(p.jornada)) {
+    jornadasMap.set(p.jornada, []);
+  }
+  jornadasMap.get(p.jornada).push(p);
+});
+
+// Mostrar cada jornada con sus partidos
+jornadasMap.forEach((partidosJornada, numJornada) => {
+  // Título de la jornada
+  contenedor.innerHTML += `<h2 class="jornada-titulo">Jornada ${numJornada}</h2>`;
+
+  // Todos los partidos de esa jornada
+  partidosJornada.forEach(p => {
+    const esMiPartido = p.local === MI_EQUIPO || p.visitante === MI_EQUIPO;
+
+    contenedor.innerHTML += `
+      <div class="partido ${esMiPartido ? 'partido-mi-equipo' : ''}">
+        <span class="equipo ${p.local === MI_EQUIPO ? 'mi-equipo' : ''}">${p.local}</span>
+        <span class="resultado">${p.golesLocal} - ${p.golesVisitante}</span>
+        <span class="equipo ${p.visitante === MI_EQUIPO ? 'mi-equipo' : ''}">${p.visitante}</span>
+      </div>
+    `;
+  });
+});
+
+</script>
+
+
+

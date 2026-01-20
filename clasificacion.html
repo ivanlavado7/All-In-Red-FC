@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clasificación</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="img/escudo.png" class="escudo">
+  <h1>Clasificación</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="jugadores.html">Jugadores</a>
+  <a href="estadisticas.html">Estadísticas</a>
+  <a href="resultados.html">Resultados</a>
+  <a href="clasificacion.html">Clasificación</a>
+</nav>
+
+<div class="container">
+  <div class="table">
+    <table class="tabla-clasificacion">
+      <thead>
+        <tr>
+          <th>Equipo</th>
+          <th>PJ</th>
+          <th>V</th>
+          <th>E</th>
+          <th>D</th>
+          <th>GF</th>
+          <th>GC</th>
+          <th>DG</th>
+          <th>Puntos</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-clasificacion">
+        <!-- AQUÍ el JavaScript mete las filas -->
+      </tbody>
+    </table>
+    <div class="escudo-grande">
+  <img src="img/escudo.png" alt="Escudo del equipo">
+</div>
+  </div>
+</div>
+
+<script src="js/datos.js"></script>
+<script>
+  const MI_EQUIPO = "ALL IN RED FC";
+
+  const tabla = document.getElementById("tabla-clasificacion");
+  const equipos = {};
+
+  partidos.forEach(p => {
+    if (p.golesLocal === null || p.golesVisitante === null) return;
+
+    // Crear equipos si no existen
+    if (!equipos[p.local]) {
+      equipos[p.local] = {
+        equipo: p.local,
+        pj: 0, pg: 0, pe: 0, pp: 0,
+        gf: 0, gc: 0, puntos: 0,
+        duelos: {}
+      };
+    }
+
+    if (!equipos[p.visitante]) {
+      equipos[p.visitante] = {
+        equipo: p.visitante,
+        pj: 0, pg: 0, pe: 0, pp: 0,
+        gf: 0, gc: 0, puntos: 0,
+        duelos: {}
+      };
+    }
+
+    const local = equipos[p.local];
+    const visitante = equipos[p.visitante];
+
+    // Partidos jugados
+    local.pj++;
+    visitante.pj++;
+
+    // Goles
+    local.gf += p.golesLocal;
+    local.gc += p.golesVisitante;
+    visitante.gf += p.golesVisitante;
+    visitante.gc += p.golesLocal;
+
+    // Duelos directos
+    if (!local.duelos[p.visitante]) {
+      local.duelos[p.visitante] = { gf: 0, gc: 0 };
+    }
+    if (!visitante.duelos[p.local]) {
+      visitante.duelos[p.local] = { gf: 0, gc: 0 };
+    }
+
+    local.duelos[p.visitante].gf += p.golesLocal;
+    local.duelos[p.visitante].gc += p.golesVisitante;
+    visitante.duelos[p.local].gf += p.golesVisitante;
+    visitante.duelos[p.local].gc += p.golesLocal;
+
+    // Resultado
+    if (p.golesLocal > p.golesVisitante) {
+      local.pg++; local.puntos += 3;
+      visitante.pp++;
+    } else if (p.golesLocal < p.golesVisitante) {
+      visitante.pg++; visitante.puntos += 3;
+      local.pp++;
+    } else {
+      local.pe++; visitante.pe++;
+      local.puntos++; visitante.puntos++;
+    }
+  });
+
+  const clasificacion = Object.values(equipos).sort((a, b) => {
+
+    // 1. Puntos
+    if (b.puntos !== a.puntos) return b.puntos - a.puntos;
+
+    // Empatados a estos puntos
+    const empatados = Object.values(equipos).filter(e => e.puntos === a.puntos);
+
+    // 2 equipos empatados → gol average particular
+    if (empatados.length === 2) {
+      const dueloA = a.duelos[b.equipo];
+      const dueloB = b.duelos[a.equipo];
+
+      if (dueloA && dueloB) {
+        const diffPartA = dueloA.gf - dueloA.gc;
+        const diffPartB = dueloB.gf - dueloB.gc;
+
+        if (diffPartB !== diffPartA) return diffPartB - diffPartA;
+        if (dueloB.gf !== dueloA.gf) return dueloB.gf - dueloA.gf;
+      }
+    }
+
+    // 3 o más empatados → diferencia general
+    const diffA = a.gf - a.gc;
+    const diffB = b.gf - b.gc;
+    if (diffB !== diffA) return diffB - diffA;
+
+    if (b.gf !== a.gf) return b.gf - a.gf;
+
+    return a.equipo.localeCompare(b.equipo);
+  });
+
+  // Pintar tabla
+  clasificacion.forEach(e => {
+    tabla.innerHTML += `
+      <tr>
+        <tr class="${e.equipo === MI_EQUIPO ? 'mi-equipo' : ''}">
+        <td>${e.equipo}</td>
+        <td>${e.pj}</td>
+        <td>${e.pg}</td>
+        <td>${e.pe}</td>
+        <td>${e.pp}</td>
+        <td>${e.gf}</td>
+        <td>${e.gc}</td>
+        <td>${e.gf - e.gc}</td>
+        <td><strong>${e.puntos}</strong></td>
+      </tr>
+    `;
+  });
+</script>
+
+

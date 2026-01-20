@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jugadores</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="img/escudo.png" class="escudo">
+  <h1>Jugadores</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="jugadores.html">Jugadores</a>
+  <a href="estadisticas.html">Estadísticas</a>
+  <a href="resultados.html">Resultados</a>
+  <a href="clasificacion.html">Clasificación</a>
+</nav>
+
+<div class="jugadores-container">
+  <div class="fila"></div> <!-- fila 1 -->
+  <div class="fila"></div> <!-- fila 2 -->
+  <div class="fila"></div> <!-- fila 3 -->
+</div>
+
+<script>
+  const MI_EQUIPO = "ALL IN RED FC";
+
+  const jugadores = [
+  { id:1,nombre: "Alejandro Gil Román",posicion: "Central, Banda izquierda",dorsal: 39, goles: 1,asistencias: 4,partidosJugados: 10,foto: "img/jugador1.jpg" },
+  { id:2,nombre: "Alejandro Reis Hernández",posicion: "Mediocentro",dorsal: 19,goles: 6,asistencias: 6,partidosJugados: 10,foto: "img/jugador2.jpg" },
+  { id:3,nombre: "Alejandro Valero Genicio",posicion: "Delantero",dorsal: 17,goles: 12,asistencias: 2,partidosJugados: 9,foto: "img/jugador3.jpg" },
+  { id:4,nombre: "Eloi Otal Rafael",posicion: "Banda izquierda, Banda derecha",dorsal: 50,goles: 0,asistencias: 0,partidosJugados: 1,foto: "img/jugador4.jpg" },
+  { id:5,nombre: "Erik Gabriel Vela",posicion: "Central, Mediocentro",dorsal: 7,goles: 2,asistencias: 3,partidosJugados: 10,foto: "img/jugador5.jpg" },
+  { id:6,nombre: "Gerard Herrera Gómez",posicion: "Central",dorsal: 16,goles: 0,asistencias: 0,partidosJugados: 7,foto: "img/jugador6.jpg" },
+  { id:7,nombre: "Iván Lavado García",posicion: "Banda derecha, Mediocentro",dorsal: 10,goles: 11,asistencias: 12,partidosJugados: 9,foto: "img/jugador7.jpg" },
+  { id:8,nombre: "Nacho Hernández Del Olmo",posicion: "Portero, Central",dorsal: 13,goles: 0,asistencias: 1,partidosJugados: 5,foto: "img/jugador8.jpg" },
+  { id:9,nombre: "Pau Soler",posicion: "Banda izquierda, Delantero",dorsal: 99,goles: 24,asistencias: 14,partidosJugados: 9,foto:"img/jugador9.jpg" },
+  { id:10,nombre: "Pierre Kallay",posicion: "Portero",dorsal: 1,goles: 0,asistencias: 1,partidosJugados: 5,foto: "img/jugador10.jpg" },
+  { id:11,nombre: "Pol Rodríguez Torralba",posicion: "Banda derecha, Banda izquierda, Delantero",dorsal: 11,goles: 5,asistencias: 7,partidosJugados: 9,foto: "img/jugador11.jpg" }
+  ];
+
+  // Divs por fila
+const filas = document.querySelectorAll('.jugadores-container .fila');
+
+filas[0].innerHTML = jugadores.slice(0, 4).map(j => `
+  <div class="jugador-card">
+    <span class="dorsal">${j.dorsal}</span>
+    <img src="${j.foto}" alt="Foto de ${j.nombre}">
+    <h2>${j.nombre === MI_EQUIPO ? '<strong>' + j.nombre + '</strong>' : j.nombre}</h2>
+    <p><strong>Posición:</strong> ${j.posicion}</p>
+    <p><strong>Goles:</strong> ${j.goles}</p>
+    <p><strong>Asistencias:</strong> ${j.asistencias}</p>
+    <p><strong>Partidos Jugados:</strong> ${j.partidosJugados}</p>
+  </div>
+`).join('');
+
+filas[1].innerHTML = jugadores.slice(4, 8).map(j => `
+  <div class="jugador-card">
+    <span class="dorsal">${j.dorsal}</span>
+    <img src="${j.foto}" alt="Foto de ${j.nombre}">
+    <h2>${j.nombre === MI_EQUIPO ? '<strong>' + j.nombre + '</strong>' : j.nombre}</h2>
+    <p><strong>Posición:</strong> ${j.posicion}</p>
+    <p><strong>Goles:</strong> ${j.goles}</p>
+    <p><strong>Asistencias:</strong> ${j.asistencias}</p>
+    <p><strong>Partidos Jugados:</strong> ${j.partidosJugados}</p>
+  </div>
+`).join('');
+
+filas[2].innerHTML = jugadores.slice(8, 11).map(j => `
+  <div class="jugador-card">
+    <span class="dorsal">${j.dorsal}</span>
+    <img src="${j.foto}" alt="Foto de ${j.nombre}">
+    <h2>${j.nombre === MI_EQUIPO ? '<strong>' + j.nombre + '</strong>' : j.nombre}</h2>
+    <p><strong>Posición:</strong> ${j.posicion}</p>
+    <p><strong>Goles:</strong> ${j.goles}</p>
+    <p><strong>Asistencias:</strong> ${j.asistencias}</p>
+    <p><strong>Partidos Jugados:</strong> ${j.partidosJugados}</p>
+  </div>
+`).join('');
+</script>

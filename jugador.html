@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha del jugador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="img/escudo.png" alt="Escudo del equipo" class="escudo">
+  <div>
+    <h1>All In Red FC</h1>
+    <p>Estadísticas oficiales del equipo</p>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="jugadores.html">Jugadores</a>
+  <a href="estadisticas.html">Estadísticas</a>
+  <a href="resultados.html">Resultados</a>
+  <a href="clasificacion.html">Clasificación</a>
+</nav>
+
+<div class="container">
+  <div class="card" id="ficha"></div>
+</div>
+
+<script src="js/datos.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const idJugador = parseInt(params.get("id"));
+
+  const jugador = jugadores.find(j => j.id === idJugador);
+
+  const ficha = document.getElementById("ficha");
+
+  if (jugador) {
+    ficha.innerHTML = `
+      <img src="${jugador.foto || 'img/jugador-default.jpg'}"
+         alt="Foto de ${jugador.nombre}"
+         style="width:150px; border-radius:10px; margin-bottom:10px;">
+      <h2>${jugador.nombre}</h2>
+      <p><strong>Dorsal:</strong> ${jugador.dorsal}</p>
+      <p><strong>Posición:</strong> ${jugador.posicion}</p>
+      <p><strong>Goles:</strong> ${jugador.goles}</p>
+      <p><strong>Asistencias:</strong> ${jugador.asistencias}</p>
+      <p><strong>Partidos Jugados:</strong> ${jugador.partidosJugados}</p>
+`;
+  } else {
+    ficha.innerHTML = "<p>Jugador no encontrado</p>";
+  }
+</script>
+
+</body>
+</html>
