@@ -41,7 +41,7 @@ const jugadores = [
   },
   {
     id:4,
-    nombre: "Eloi Otal Rafael",
+    nombre: "Eloi Otal Rafel",
     posicion: "Banda izquierda, Banda derecha",
     dorsal: 50,
     goles: 0,
@@ -91,7 +91,7 @@ const jugadores = [
   },
   {
     id:9,
-    nombre: "Pau Soler",
+    nombre: "Pau Sole Villamarin",
     posicion: "Banda izquierda, Delantero",
     dorsal: 99,
     goles: 24,
