@@ -15,8 +15,8 @@ const jugadores = [
     posicion: "Central, Banda izquierda",
     dorsal: 39,
     goles: 1,
-    asistencias: 4,
-    partidosJugados: 10,
+    asistencias: 5,
+    partidosJugados: 11,
     foto: "img/jugador1.jpg"
   },
   {
@@ -26,7 +26,7 @@ const jugadores = [
     dorsal: 19,
     goles: 6,
     asistencias: 6,
-    partidosJugados: 10,
+    partidosJugados: 11,
     foto: "img/jugador2.jpg"
   },
   {
@@ -34,9 +34,9 @@ const jugadores = [
     nombre: "Alejandro Valero Genicio",
     posicion: "Delantero",
     dorsal: 17,
-    goles: 12,
-    asistencias: 2,
-    partidosJugados: 9,
+    goles: 15,
+    asistencias: 3,
+    partidosJugados: 10,
     foto: "img/jugador3.jpg"
   },
   {
@@ -56,7 +56,7 @@ const jugadores = [
     dorsal: 7,
     goles: 2,
     asistencias: 3,
-    partidosJugados: 10,
+    partidosJugados: 11,
     foto: "img/jugador5.jpg"
   },
   {
@@ -66,7 +66,7 @@ const jugadores = [
     dorsal: 16,
     goles: 0,
     asistencias: 0,
-    partidosJugados: 7,
+    partidosJugados: 8,
     foto: "img/jugador6.jpg"
   },
   {
@@ -74,9 +74,9 @@ const jugadores = [
     nombre: "Iván Lavado García",
     posicion: "Banda derecha, Mediocentro",
     dorsal: 10,
-    goles: 11,
-    asistencias: 12,
-    partidosJugados: 9,
+    goles: 12,
+    asistencias: 15,
+    partidosJugados: 10,
     foto: "img/jugador7.jpg"
   },
   {
@@ -86,7 +86,7 @@ const jugadores = [
     dorsal: 13,
     goles: 0,
     asistencias: 1,
-    partidosJugados: 5,
+    partidosJugados: 6,
     foto: "img/jugador8.jpg"
   },
   {
@@ -94,9 +94,9 @@ const jugadores = [
     nombre: "Pau Sole Villamarin",
     posicion: "Banda izquierda, Delantero",
     dorsal: 99,
-    goles: 24,
+    goles: 28,
     asistencias: 14,
-    partidosJugados: 9,
+    partidosJugados: 10,
     foto: "img/jugador9.jpg"
   },
   {
@@ -105,8 +105,8 @@ const jugadores = [
     posicion: "Portero",
     dorsal: 1,
     goles: 0,
-    asistencias: 1,
-    partidosJugados: 5,
+    asistencias: 2,
+    partidosJugados: 6,
     foto: "img/jugador10.jpg"
   },
   {
@@ -206,10 +206,10 @@ const partidos = [
   // VRC descansa
 
   // JORNADA 13
-  { jornada: 13, local: "Beerça Legends", visitante: "Romesku Lukau", golesLocal: null, golesVisitante: null }, 
-  { jornada: 13, local: "Naldas F7", visitante: "ALL IN RED FC", golesLocal: null, golesVisitante: null },
-  { jornada: 13, local: "Moreneta F.C.", visitante: "BPB", golesLocal: null, golesVisitante: null },
-  { jornada: 13, local: "VRC", visitante: "TXIMELET F.T.", golesLocal: null, golesVisitante: null },
+  { jornada: 13, local: "Beerça Legends", visitante: "Romesku Lukau", golesLocal: 2, golesVisitante: 11 }, 
+  { jornada: 13, local: "Naldas F7", visitante: "ALL IN RED FC", golesLocal: 5, golesVisitante: 8 },
+  { jornada: 13, local: "Moreneta F.C.", visitante: "BPB", golesLocal: 1, golesVisitante: 12 },
+  { jornada: 13, local: "VRC", visitante: "TXIMELET F.T.", golesLocal: 0, golesVisitante: 0 },
   // 1MillionBeers descansa
 
   // JORNADA 14
