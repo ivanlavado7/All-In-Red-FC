@@ -489,4 +489,49 @@ nav a:hover {
   background-color: #ffeaea;
   font-weight: bold;
 }
+/* =====================
+   📱 MÓVIL (RESPONSIVE)
+   ===================== */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .container,
+  .estadisticas {
+    padding: 10px;
+  }
+  .jugadores-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .jugador-card {
+    padding: 10px;
+  }
+
+  .jugador-card h3 {
+    font-size: 16px;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .stat-card {
+    padding: 15px;
+    font-size: 15px;
+  }
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+}
 
