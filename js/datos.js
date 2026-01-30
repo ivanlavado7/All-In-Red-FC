@@ -1,10 +1,10 @@
 const equipo = {
-  partidos: 10,
+  partidos: 11,
   victorias: 8,
   empates: 0,
-  derrotas: 2,
-  golesFavor: 62,
-  golesContra: 48
+  derrotas: 3,
+  golesFavor: 75,
+  golesContra: 59
 };
 
 
@@ -14,9 +14,9 @@ const jugadores = [
     nombre: "Alejandro Gil Román",
     posicion: "Central, Banda izquierda",
     dorsal: 39,
-    goles: 1,
-    asistencias: 5,
-    partidosJugados: 11,
+    goles: 2,
+    asistencias: 6,
+    partidosJugados: 12,
     foto: "img/jugador1.jpg"
   },
   {
@@ -24,9 +24,9 @@ const jugadores = [
     nombre: "Alejandro Reis Hernández",
     posicion: "Mediocentro",
     dorsal: 19,
-    goles: 6,
+    goles: 8,
     asistencias: 6,
-    partidosJugados: 11,
+    partidosJugados: 12,
     foto: "img/jugador2.jpg"
   },
   {
@@ -56,7 +56,7 @@ const jugadores = [
     dorsal: 7,
     goles: 2,
     asistencias: 3,
-    partidosJugados: 11,
+    partidosJugados: 12,
     foto: "img/jugador5.jpg"
   },
   {
@@ -75,8 +75,8 @@ const jugadores = [
     posicion: "Banda derecha, Mediocentro",
     dorsal: 10,
     goles: 12,
-    asistencias: 15,
-    partidosJugados: 10,
+    asistencias: 17,
+    partidosJugados: 11,
     foto: "img/jugador7.jpg"
   },
   {
@@ -86,7 +86,7 @@ const jugadores = [
     dorsal: 13,
     goles: 0,
     asistencias: 1,
-    partidosJugados: 6,
+    partidosJugados: 7,
     foto: "img/jugador8.jpg"
   },
   {
@@ -94,9 +94,9 @@ const jugadores = [
     nombre: "Pau Sole Villamarin",
     posicion: "Banda izquierda, Delantero",
     dorsal: 99,
-    goles: 28,
+    goles: 30,
     asistencias: 14,
-    partidosJugados: 10,
+    partidosJugados: 11,
     foto: "img/jugador9.jpg"
   },
   {
@@ -116,7 +116,7 @@ const jugadores = [
     dorsal: 11,
     goles: 5,
     asistencias: 7,
-    partidosJugados: 9,
+    partidosJugados: 10,
     foto: "img/jugador11.jpg"
   }
 ];
@@ -213,10 +213,10 @@ const partidos = [
   // 1MillionBeers descansa
 
   // JORNADA 14
-  { jornada: 14, local: "VRC", visitante: "Romesku Lukau", golesLocal: null, golesVisitante: null }, 
-  { jornada: 14, local: "BPB", visitante: "1MillionBeers", golesLocal: null, golesVisitante: null },
-  { jornada: 14, local: "ALL IN RED FC", visitante: "Beerça Legends", golesLocal: null, golesVisitante: null },
-  { jornada: 14, local: "TXIMELET F.T.", visitante: "Moreneta F.C.", golesLocal: null, golesVisitante: null },
+  { jornada: 14, local: "VRC", visitante: "Romesku Lukau", golesLocal: 4, golesVisitante: 5 }, 
+  { jornada: 14, local: "BPB", visitante: "1MillionBeers", golesLocal: 14, golesVisitante: 4 },
+  { jornada: 14, local: "ALL IN RED FC", visitante: "Beerça Legends", golesLocal: 5, golesVisitante: 6 },
+  { jornada: 14, local: "TXIMELET F.T.", visitante: "Moreneta F.C.", golesLocal: 3, golesVisitante: 0 },
   // Naldas F7 descansa
 
   // JORNADA 15
