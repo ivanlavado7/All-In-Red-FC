@@ -489,9 +489,6 @@ nav a:hover {
   background-color: #ffeaea;
   font-weight: bold;
 }
-/* =====================
-   📱 MÓVIL (RESPONSIVE)
-   ===================== */
 @media (max-width: 768px) {
   nav {
     display: flex;
@@ -533,5 +530,38 @@ nav a:hover {
     padding: 6px;
   }
 
+}
+@media (max-width: 768px) {
+
+  .estadisticas {
+    padding: 15px;
+  }
+  .bloque {
+    margin-bottom: 30px;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+  .stat-card {
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  .bloque h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .stat-card strong {
+    font-size: 18px;
+    display: block;
+    margin-top: 5px;
+  }
+  .racha {
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+  }
 }
 
