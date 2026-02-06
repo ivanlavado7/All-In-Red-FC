@@ -25,8 +25,8 @@ const jugadores = [
     posicion: "Mediocentro",
     dorsal: 19,
     goles: 8,
-    asistencias: 6,
-    partidosJugados: 12,
+    asistencias: 7,
+    partidosJugados: 13,
     foto: "img/jugador2.jpg"
   },
   {
@@ -36,7 +36,7 @@ const jugadores = [
     dorsal: 17,
     goles: 15,
     asistencias: 3,
-    partidosJugados: 10,
+    partidosJugados: 11,
     foto: "img/jugador3.jpg"
   },
   {
@@ -74,9 +74,9 @@ const jugadores = [
     nombre: "Iván Lavado García",
     posicion: "Banda derecha, Mediocentro",
     dorsal: 10,
-    goles: 12,
-    asistencias: 17,
-    partidosJugados: 11,
+    goles: 14,
+    asistencias: 19,
+    partidosJugados: 12,
     foto: "img/jugador7.jpg"
   },
   {
@@ -86,7 +86,7 @@ const jugadores = [
     dorsal: 13,
     goles: 0,
     asistencias: 1,
-    partidosJugados: 7,
+    partidosJugados: 8,
     foto: "img/jugador8.jpg"
   },
   {
@@ -104,9 +104,9 @@ const jugadores = [
     nombre: "Pierre Kallay",
     posicion: "Portero",
     dorsal: 1,
-    goles: 0,
-    asistencias: 2,
-    partidosJugados: 6,
+    goles: 1,
+    asistencias: 3,
+    partidosJugados: 7,
     foto: "img/jugador10.jpg"
   },
   {
@@ -114,9 +114,9 @@ const jugadores = [
     nombre: "Pol Rodríguez Torralba",
     posicion: "Banda derecha, Banda izquierda, Delantero",
     dorsal: 11,
-    goles: 5,
-    asistencias: 7,
-    partidosJugados: 10,
+    goles: 7,
+    asistencias: 8,
+    partidosJugados: 11,
     foto: "img/jugador11.jpg"
   }
 ];
@@ -209,7 +209,7 @@ const partidos = [
   { jornada: 13, local: "Beerça Legends", visitante: "Romesku Lukau", golesLocal: 2, golesVisitante: 11 }, 
   { jornada: 13, local: "Naldas F7", visitante: "ALL IN RED FC", golesLocal: 5, golesVisitante: 8 },
   { jornada: 13, local: "Moreneta F.C.", visitante: "BPB", golesLocal: 1, golesVisitante: 12 },
-  { jornada: 13, local: "VRC", visitante: "TXIMELET F.T.", golesLocal: 0, golesVisitante: 0 },
+  { jornada: 13, local: "VRC", visitante: "TXIMELET F.T.", golesLocal: null, golesVisitante: null },
   // 1MillionBeers descansa
 
   // JORNADA 14
@@ -220,10 +220,10 @@ const partidos = [
   // Naldas F7 descansa
 
   // JORNADA 15
-  { jornada: 15, local: "1MillionBeers", visitante: "Moreneta F.C.", golesLocal: null, golesVisitante: null }, 
-  { jornada: 15, local: "Beerça Legends", visitante: "TXIMELET F.T.", golesLocal: null, golesVisitante: null },
-  { jornada: 15, local: "ALL IN RED FC", visitante: "BPB", golesLocal: null, golesVisitante: null },
-  { jornada: 15, local: "Naldas F7", visitante: "VRC", golesLocal: null, golesVisitante: null },
+  { jornada: 15, local: "1MillionBeers", visitante: "Moreneta F.C.", golesLocal: 4, golesVisitante: 5 }, 
+  { jornada: 15, local: "Beerça Legends", visitante: "TXIMELET F.T.", golesLocal: 1, golesVisitante: 6 },
+  { jornada: 15, local: "ALL IN RED FC", visitante: "BPB", golesLocal: 6, golesVisitante: 9 },
+  { jornada: 15, local: "Naldas F7", visitante: "VRC", golesLocal: 9, golesVisitante: 6 },
   // Romesku Lukau descansa
 
   // JORNADA 16

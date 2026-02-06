@@ -99,4 +99,3 @@ ultimos5.forEach(p => {
     </span>
   `;
 });
-// FIN estadisticas.js
