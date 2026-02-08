@@ -531,10 +531,6 @@ nav a:hover {
   }
 
 }
-/* ================================
-   📊 TARJETAS ESTADÍSTICAS BONITAS
-   ================================ */
-
 .stat-card {
   background: white;
   border-radius: 18px;
@@ -547,7 +543,7 @@ nav a:hover {
 .stat-num {
   font-size: 32px;
   font-weight: bold;
-  color: #c00000;
+  color: #ad1212;
   margin-bottom: 8px;
 }
 
@@ -589,6 +585,172 @@ nav a:hover {
     padding: 10px 14px;
     border-radius: 10px;
   }
+}
+
+.partido-previo {
+  text-align: center;
+}
+
+.partido-previo h2 {
+  margin-bottom: 20px;
+}
+
+.info-partido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.equipos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.equipo.local {
+  color: #ad1212;
+}
+
+.equipo.visitante {
+  color: #444;
+}
+
+.vs {
+  font-size: 18px;
+}
+
+.datos p {
+  margin: 6px 0;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .equipos {
+    font-size: 18px;
+    gap: 15px;
+  }
+
+  .datos p {
+    font-size: 14px;
+  }
+}
+.campo-futbol {
+  background: linear-gradient(#1f8f3a, #1f8f3a);
+  border-radius: 18px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 35px;
+  margin-top: 25px;
+}
+.linea {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+.jugador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+}
+
+.jugador img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 3px solid #ad1212;
+  background: #000;
+}
+
+.jugador span {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .campo-futbol {
+    padding: 20px 10px;
+    gap: 25px;
+  }
+
+  .linea {
+    gap: 18px;
+  }
+
+  .jugador {
+    width: 65px;
+  }
+
+  .jugador img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .jugador span {
+    font-size: 11px;
+  }
+   .dorsals {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .capitan {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    right: -12px;
+  }
+
+  .guantes {
+    font-size: 16px;
+  }
+}
+.foto-jugador {
+  position: relative;
+}
+.dorsals {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c00;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 15 px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+.capitan {
+  position: absolute;
+  right: -20px;
+  top: 8px;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guantes {
+  position: absolute;
+  right: -16px;
+  bottom: 8px;
+  font-size: 18px;
 }
 
 

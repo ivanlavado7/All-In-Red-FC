@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Próximo partido</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="header">
+  <img src="img/escudo.png" class="escudo">
+  <h1>Próximo partido</h1>
+</header>
+
+<nav>
+  <a href="previa.html">Próximo partido</a>
+  <a href="index.html">Inicio</a>
+  <a href="jugadores.html">Jugadores</a>
+  <a href="estadisticas.html">Estadísticas</a>
+  <a href="resultados.html">Resultados</a>
+  <a href="clasificacion.html">Clasificación</a>
+</nav>
+
+<main class="previa">
+
+  <section class="card partido-previo">
+   <h2>🗓 Próximo partido</h2>
+
+    <div class="info-partido">
+      <div class="equipos">
+        <span class="equipo local">ALL IN RED FC</span>
+       <strong class="vs">VS</strong>
+       <span class="equipo visitante">VRC</span>
+     </div>
+
+      <div class="datos">
+       <p>📍 Sagrat Cor</p>
+       <p>📅 Miercoles 11 de Febrero</p>
+       <p>⏰ 20:45</p>
+       <p>🏆 Jornada 16</p>
+     </div>
+    </div>
+  </section>
+
+ <section class="card alineacion">
+  <h2>Alineación (1-2-3-1)</h2>
+
+  <div class="campo-futbol">
+    <div class="linea fila-portero" id="portero"></div>
+    <div class="linea fila-defensas" id="defensas"></div>
+    <div class="linea fila-centro" id="centro"></div>
+    <div class="linea fila-delantero" id="delantero"></div>
+  </div>
+</section>
+
+
+</main>
+
+<script src="js/datos.js"></script>
+<script src="js/previa.js"></script>
+
+</body>
+</html>
