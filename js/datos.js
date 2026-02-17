@@ -25,8 +25,8 @@ const jugadores = [
     posicion: "Mediocentro",
     dorsal: 19,
     goles: 8,
-    asistencias: 7,
-    partidosJugados: 13,
+    asistencias: 10,
+    partidosJugados: 14,
     foto: "img/jugador2.jpg"
   },
   {
@@ -34,9 +34,9 @@ const jugadores = [
     nombre: "Alejandro Valero Genicio",
     posicion: "Delantero",
     dorsal: 17,
-    goles: 15,
+    goles: 17,
     asistencias: 3,
-    partidosJugados: 11,
+    partidosJugados: 12,
     foto: "img/jugador3.jpg"
   },
   {
@@ -46,7 +46,7 @@ const jugadores = [
     dorsal: 50,
     goles: 0,
     asistencias: 0,
-    partidosJugados: 1,
+    partidosJugados: 2,
     foto: "img/jugador4.jpg"
   },
   {
@@ -56,7 +56,7 @@ const jugadores = [
     dorsal: 7,
     goles: 2,
     asistencias: 3,
-    partidosJugados: 12,
+    partidosJugados: 13,
     foto: "img/jugador5.jpg"
   },
   {
@@ -74,9 +74,9 @@ const jugadores = [
     nombre: "Iván Lavado García",
     posicion: "Banda derecha, Mediocentro",
     dorsal: 10,
-    goles: 14,
-    asistencias: 19,
-    partidosJugados: 12,
+    goles: 15,
+    asistencias: 21,
+    partidosJugados: 13,
     foto: "img/jugador7.jpg"
   },
   {
@@ -227,10 +227,10 @@ const partidos = [
   // Romesku Lukau descansa
 
   // JORNADA 16
-  { jornada: 16, local: "ALL IN RED FC", visitante: "VRC", golesLocal: null, golesVisitante: null }, 
-  { jornada: 16, local: "Beerça Legends", visitante: "Moreneta F.C.", golesLocal: null, golesVisitante: null },
-  { jornada: 16, local: "BPB", visitante: "Romesku Lukau", golesLocal: null, golesVisitante: null },
-  { jornada: 16, local: "Naldas F7", visitante: "1MillionBeers", golesLocal: null, golesVisitante: null },
+  { jornada: 16, local: "ALL IN RED FC", visitante: "VRC", golesLocal: 7, golesVisitante: 8 }, 
+  { jornada: 16, local: "Beerça Legends", visitante: "Moreneta F.C.", golesLocal: 5, golesVisitante: 8 },
+  { jornada: 16, local: "BPB", visitante: "Romesku Lukau", golesLocal: 5, golesVisitante: 6 },
+  { jornada: 16, local: "Naldas F7", visitante: "1MillionBeers", golesLocal: 10, golesVisitante: 10 },
   // TXIMELET F.T. descansa
 
   // JORNADA 17

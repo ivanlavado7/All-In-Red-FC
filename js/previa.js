@@ -10,12 +10,12 @@ const alineacion = {
     { nombre: "Gil", dorsals: 39, foto: "img/jugador1.jpg" }
   ],
   centro: [
-    { nombre: "Pau", dorsals: 99, foto: "img/jugador9.jpg" },
+    { nombre: "Eloi", dorsals: 50, foto: "img/jugador4.jpg" },
     { nombre: "Reis", dorsals: 19, foto: "img/jugador2.jpg" },
-    { nombre: "Iván", dorsals: 10, foto: "img/jugador7.jpg", capitan: true }
+    { nombre: "Iván", dorsals: 10, foto: "img/jugador7.jpg", capitan: true },
   ],
   delantero: {
-    nombre: "Valero", dorsals: 17, foto: "img/jugador3.jpg"
+        nombre: "Valero", dorsals: 17, foto: "img/jugador3.jpg"
   }
 };
 
