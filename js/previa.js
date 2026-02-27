@@ -7,7 +7,7 @@ const alineacion = {
   },
   defensas: [
     { nombre: "Gerard", dorsals: 16, foto: "img/jugador6.jpg" },
-    { nombre: "Gil", dorsals: 39, foto: "img/jugador1.jpg" }
+    { nombre: "Wachin", dorsals: 39, foto: "img/jugador5.jpg" }
   ],
   centro: [
     { nombre: "Eloi", dorsals: 50, foto: "img/jugador4.jpg" },

@@ -15,8 +15,8 @@ const jugadores = [
     posicion: "Central, Banda izquierda",
     dorsal: 39,
     goles: 2,
-    asistencias: 6,
-    partidosJugados: 12,
+    asistencias: 8,
+    partidosJugados: 14,
     foto: "img/jugador1.jpg"
   },
   {
@@ -24,9 +24,9 @@ const jugadores = [
     nombre: "Alejandro Reis Hernández",
     posicion: "Mediocentro",
     dorsal: 19,
-    goles: 8,
-    asistencias: 10,
-    partidosJugados: 14,
+    goles: 12,
+    asistencias: 11,
+    partidosJugados: 16,
     foto: "img/jugador2.jpg"
   },
   {
@@ -35,8 +35,8 @@ const jugadores = [
     posicion: "Delantero",
     dorsal: 17,
     goles: 17,
-    asistencias: 3,
-    partidosJugados: 12,
+    asistencias: 5,
+    partidosJugados: 13,
     foto: "img/jugador3.jpg"
   },
   {
@@ -46,7 +46,7 @@ const jugadores = [
     dorsal: 50,
     goles: 0,
     asistencias: 0,
-    partidosJugados: 2,
+    partidosJugados: 5,
     foto: "img/jugador4.jpg"
   },
   {
@@ -56,7 +56,7 @@ const jugadores = [
     dorsal: 7,
     goles: 2,
     asistencias: 3,
-    partidosJugados: 13,
+    partidosJugados: 15,
     foto: "img/jugador5.jpg"
   },
   {
@@ -66,7 +66,7 @@ const jugadores = [
     dorsal: 16,
     goles: 0,
     asistencias: 0,
-    partidosJugados: 8,
+    partidosJugados: 9,
     foto: "img/jugador6.jpg"
   },
   {
@@ -74,9 +74,9 @@ const jugadores = [
     nombre: "Iván Lavado García",
     posicion: "Banda derecha, Mediocentro",
     dorsal: 10,
-    goles: 15,
-    asistencias: 21,
-    partidosJugados: 13,
+    goles: 18,
+    asistencias: 22,
+    partidosJugados: 15,
     foto: "img/jugador7.jpg"
   },
   {
@@ -86,7 +86,7 @@ const jugadores = [
     dorsal: 13,
     goles: 0,
     asistencias: 1,
-    partidosJugados: 8,
+    partidosJugados: 9,
     foto: "img/jugador8.jpg"
   },
   {
@@ -106,7 +106,7 @@ const jugadores = [
     dorsal: 1,
     goles: 1,
     asistencias: 3,
-    partidosJugados: 7,
+    partidosJugados: 8,
     foto: "img/jugador10.jpg"
   },
   {
@@ -209,7 +209,7 @@ const partidos = [
   { jornada: 13, local: "Beerça Legends", visitante: "Romesku Lukau", golesLocal: 2, golesVisitante: 11 }, 
   { jornada: 13, local: "Naldas F7", visitante: "ALL IN RED FC", golesLocal: 5, golesVisitante: 8 },
   { jornada: 13, local: "Moreneta F.C.", visitante: "BPB", golesLocal: 1, golesVisitante: 12 },
-  { jornada: 13, local: "VRC", visitante: "TXIMELET F.T.", golesLocal: null, golesVisitante: null },
+  { jornada: 13, local: "VRC", visitante: "TXIMELET F.T.", golesLocal: 4, golesVisitante: 8 },
   // 1MillionBeers descansa
 
   // JORNADA 14
@@ -234,16 +234,16 @@ const partidos = [
   // TXIMELET F.T. descansa
 
   // JORNADA 17
-  { jornada: 17, local: "BPB", visitante: "VRC", golesLocal: null, golesVisitante: null }, 
-  { jornada: 17, local: "TXIMELET F.T.", visitante: "Romesku Lukau", golesLocal: null, golesVisitante: null },
-  { jornada: 17, local: "Beerça Legends", visitante: "Naldas F7", golesLocal: null, golesVisitante: null },
-  { jornada: 17, local: "ALL IN RED FC", visitante: "1MillionBeers", golesLocal: null, golesVisitante: null },
+  { jornada: 17, local: "BPB", visitante: "VRC", golesLocal: 6, golesVisitante: 2 }, 
+  { jornada: 17, local: "TXIMELET F.T.", visitante: "Romesku Lukau", golesLocal: 8, golesVisitante: 4 },
+  { jornada: 17, local: "Beerça Legends", visitante: "Naldas F7", golesLocal: 7, golesVisitante: 11 },
+  { jornada: 17, local: "ALL IN RED FC", visitante: "1MillionBeers", golesLocal: 6, golesVisitante: 7 },
   // Moreneta F.C. descansa
 
   // JORNADA 18
-  { jornada: 18, local: "ALL IN RED FC", visitante: "Romesku Lukau", golesLocal: null, golesVisitante: null }, 
-  { jornada: 18, local: "Moreneta F.C.", visitante: "VRC", golesLocal: null, golesVisitante: null },
-  { jornada: 18, local: "Naldas F7", visitante: "BPB", golesLocal: null, golesVisitante: null },
-  { jornada: 18, local: "1MillionBeers", visitante: "TXIMELET F.T.", golesLocal: null, golesVisitante: null },
+  { jornada: 18, local: "ALL IN RED FC", visitante: "Romesku Lukau", golesLocal: 2, golesVisitante: 8 }, 
+  { jornada: 18, local: "Moreneta F.C.", visitante: "VRC", golesLocal: 2, golesVisitante: 2 },
+  { jornada: 18, local: "Naldas F7", visitante: "BPB", golesLocal: 5, golesVisitante: 6 },
+  { jornada: 18, local: "1MillionBeers", visitante: "TXIMELET F.T.", golesLocal: 2, golesVisitante: 12 },
   // Beerça Legends descansa
 ];
